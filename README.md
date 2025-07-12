@@ -8,6 +8,7 @@ Este código está em JavaScript e tem como objetivo demonstrar o uso de classes
 
 ## Classe Heroi
 
+
 Define um herói com os atributos nome, idade e tipo.
 Possui um método chamado atacar() que imprime uma mensagem diferente dependendo do tipo do herói:
 Se for "mago", o ataque é "magia".
@@ -16,9 +17,11 @@ Se for "monge", o ataque é "artes marciais".
 Se for "ninja", o ataque é "shuriken".
 Qualquer outro tipo, aparece "ataque desconhecido".
 
+
 ## Função testarHerois
 
 Cria uma lista de heróis, cada um com seu nome, idade e tipo.
+
 Para cada herói na lista, instancia um objeto da classe Heroi e chama o método atacar(), que exibe no console a frase informando o tipo do herói e a forma de ataque.
 
 ## Execução
@@ -36,6 +39,7 @@ O ninja atacou usando shuriken.
 
 ## 1. Estrutura da Classe Heroi
 
+
 A classe Heroi é um exemplo clássico de orientação a objetos (OO), que permite criar objetos com características e comportamentos próprios.
 
 Atributos: nome, idade, tipo são definidos no construtor, tornando cada instância única.
@@ -50,6 +54,7 @@ Organização: Agrupa dados e funções relacionadas a herói em um único lugar
 
 ## 2. Decisão de Ataque
 
+
 O método atacar() utiliza uma estrutura condicional (if/else) para decidir o tipo de ataque.
 
 Se o tipo do herói não estiver entre mago, guerreiro, monge ou ninja, o ataque será "ataque desconhecido".
@@ -58,7 +63,7 @@ Sugestão de melhoria:
 
 Se os tipos de herói aumentarem, o uso de um objeto (mapa) pode deixar o código mais limpo:
 
-### JavaScript
+JavaScript
 
 const ataques = {
 
@@ -75,6 +80,7 @@ ataque = ataques[this.tipo] || "ataque desconhecido";
 
 ## 3. Função testarHerois
 
+
 Essa função serve para simular uma partida ou teste, criando heróis e demonstrando seus ataques.
 
 Array de Objetos: Permite organizar múltiplos dados de heróis facilmente.
@@ -85,7 +91,7 @@ Boas práticas alternativas:
 
 Poderia ser usado um forEach para maior legibilidade:
 
-### JavaScript
+JavaScript
 
 listaHerois.forEach(dados => {
 
@@ -97,9 +103,10 @@ listaHerois.forEach(dados => {
 
 ## 4. Saída do Código
 
+
 O console exibirá:
 
-### Code
+Code
 
 O mago atacou usando magia.
 
